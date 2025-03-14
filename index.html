@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Item</title>
+    <link rel="stylesheet" href="item.css">
+</head>
+<body>
+    <header>
+        <nav class="navBar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="Menu">
+        <section class="menu-part">
+            <input class="sms" type="text" placeholder="Search Anything♾️♾️">
+            <button class="search-btn">🔍</button>
+        </section>
+        
+        <div class="main-container">
+            <div id="productContainer" class="product-container">
+            </div>
+
+            <div class="cart-container">
+                <h2 class="thisCart">This is Cart <span id="count">0</span></h2>
+                <hr>
+                <div id="cart-main-container" class="cart-main-container">
+                </div>
+                <hr>
+                <h2 class="total1">Total: $<span id="total" class="total">0.00</span></h2>
+            </div>
+        </div>
+    </section>        
+
+    <!-- Modal for Product Details -->
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-body">
+                <!-- Product details will be injected here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="item.js"></script>
+</body>
+</html>
